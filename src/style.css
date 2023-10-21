@@ -44,4 +44,5 @@
   height: 20%;
   background-color: transparent;
   font-size: 54pt;
+  transform: rotate(180deg);
 }
