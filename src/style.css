@@ -1,1 +1,47 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  min-width: 300px !important;
+  min-height: 400px !important;
+  width: 300px;
+  height: 400px;
+  margin-top: 100px;
+  border-radius: 30px;
+}
+.diamonds > .card-header {
+  color: red;
+}
+.diamonds > .card-footer {
+  color: red;
+}
+.hearts > .card-header {
+  color: red;
+}
+.hearts > .card-footer {
+  color: red;
+}
+.clubs > .card-header {
+  color: black;
+}
+.clubs > .card-footer {
+  color: black;
+}
+.spades > .card-header {
+  color: black;
+}
+.spades > .card-footer {
+  color: black;
+}
+.card-header {
+  height: 20%;
+  background-color: transparent;
+  font-size: 54pt;
+}
+.card-body {
+  font-size: 54pt;
+}
+.card-footer {
+  height: 20%;
+  background-color: transparent;
+  font-size: 54pt;
+}

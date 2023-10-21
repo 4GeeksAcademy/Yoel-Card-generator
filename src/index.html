@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>Document</title>
   </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+  <body class="bg-success">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card" id="myCard">
+          <div class="card-header border-0 pt-0" id="header"></div>
+          <div class="card-body text-center mt-5" id="body"></div>
+          <div class="card-footer text-end border-0 mb-5" id="footer"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <button id="drag" type="button" class="btn btn-light col-2 mx-1">
+          Drag another card
+        </button>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="form-check form-switch col-2 bg-light rounded">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="timer"
+          />
+          <label class="form-check-label" for="timer">Drag every </label>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="time"
+          >
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+          </select>
+          seconds
+          <p>(stop to change time)</p>
+          <p></p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="row justify-content-center mt-5">
+          <div class="col-2">
+            <input
+              id="width"
+              type="text"
+              class="form-control"
+              placeholder="Width (px)*"
+            />
+            <label>*Min 300px</label>
+          </div>
+          <div class="col-2">
+            <input
+              id="height"
+              type="text"
+              class="form-control"
+              placeholder="Height (px)*"
+            />
+            <label>*Min 400px</label>
+          </div>
+        </div>
       </div>
     </div>
   </body>
